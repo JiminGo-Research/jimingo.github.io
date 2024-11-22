@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: Jimin Go
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
