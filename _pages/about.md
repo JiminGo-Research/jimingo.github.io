@@ -15,8 +15,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently enrolled in a dual bachelor's degree program, having studied Industrial Engineering for three years at Incheon National University and now pursuing Management Information Systems at Weber State University. I am expected to graduate from both institutions in the spring of 2025.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research goal is to enable the safe and reliable integration of intelligent and adaptable AI agents or robots into society, especially those capable of effecitvely nacigating unfamiliar situations. This vision stems from my academic experiences, which have fueld my passion for creating AI systems that can independently determine what needs to be done, identify gaps in knowldege, and learn how to address them effciently and effectively. I am particularly interested in building end-to-end pipelines that support problem understanding, adaptive learning, and decisive action. To achieve this, I aim to leverage advanced techniques such as mahcine learning, reinforcement learning, and robotics skills.  
