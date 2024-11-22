@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jimingo.github.io/sitemap.xml
+Sitemap: https://jimingo-research.github.io/sitemap.xml
