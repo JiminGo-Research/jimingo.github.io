@@ -7,11 +7,33 @@ importance: 3
 category: Additional
 ---
 
-I participated in the Game Day Analytics Challenge hosted by the David Eccles School of Business at the University of Utah. In this competition, our team secured 2nd place in the undergraduate division. You can find more detatils about the event through this link: 
+I participated in the Game Day Analytics Challenge hosted by the David Eccles School of Business at the University of Utah. In this competition, our team secured 2nd place in the undergraduate division. 
+
+Brief introduction of competition:
+You can find more detatils about the event through this link: 
 https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/
 
-Data description:
+Our goal:
+Analyze which brand delivered the most effective Super Bowl advertisement and provide valuable insights into large-scale events like the Super Bowl using Twitter data.
 
+Our strategy:
+To answer the question, "What makes an ad successful?" we analyzed the data from various perspectives, including the number of tweets per brand over time, cost per tweet by brand, and sentiment analysis. 
+
+However, each analysis raised important questions. For example, in the chart below, which analyzes the number of tweets over time, a notable point is the dramatic increase in tweets related to a specific brand immediately following its advertisement. This raises the question: Which is more effective—consistent tweets throughout the entire period, like Marvel, or concentrated bursts of tweets at specific times, like Verizon?
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/gdac_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The number of tweets over time for the top 10 brands
+</div>
+
+Multi-Criteria Decision Making
+Therefore, we decided to evaluate the effectiveness of the advertisements by considering all the factors comprehensively and chose to use a Multi-Criteria Decision-Making (MCDM) model.
+
+Who is the real winner?
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
