@@ -16,7 +16,8 @@ https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/
 Our goal:
 Analyze which brand delivered the most effective Super Bowl advertisement and provide valuable insights into large-scale events like the Super Bowl using Twitter data.
 
-Our strategy:
+Brief summarization of our strategy:
+
 To answer the question, "What makes an ad successful?" we analyzed the data from various perspectives, including the number of tweets per brand over time, cost per tweet by brand, and sentiment analysis. 
 
 However, each analysis raised important questions. For example, in the chart below, which analyzes the number of tweets over time, a notable point is the dramatic increase in tweets related to a specific brand immediately following its advertisement. This raises the question: Which is more effective—consistent tweets throughout the entire period, like Marvel, or concentrated bursts of tweets at specific times, like Verizon?
@@ -31,7 +32,18 @@ However, each analysis raised important questions. For example, in the chart bel
 </div>
 
 Multi-Criteria Decision Making:
-Therefore, we decided to evaluate the effectiveness of the advertisements by considering all the factors comprehensively and chose to use a MCDM model. We used a model that combines AHP and TOPSIS. The weights were determined through the AHP model, while the TOPSIS model was used to evaluate how close the alternatives were to the given criteria in order to identify the most ideal alternative. The criteria we used were the number of tweets, cost per tweet, positive tweet ratio, and negative tweet ratio, for a total of four criteria.
+Therefore, we decided to evaluate the effectiveness of the advertisements by considering all the factors comprehensively and chose to use a MCDM model. We used a model that combines AHP and TOPSIS. The weights were determined through the AHP model, while the TOPSIS model was used to evaluate how close the alternatives were to the given criteria in order to identify the most ideal alternative. 
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/gdad_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/gdac_3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    You can also have artistically styled 2/3 + 1/3 images, like these.
+</div>
 
 Who is the real winner?
 
