@@ -7,13 +7,24 @@ importance: 3
 category: Additional
 ---
 
-I participated in the Game Day Analytics Challenge hosted by the David Eccles School of Business at the University of Utah. In this competition, our team secured 2nd place in the undergraduate division. 
+I participated in the <b>Game Day Analytics Challenge</b> hosted by the David Eccles School of Business at the University of Utah. In this competition, our team secured <b>2nd place in the undergraduate division</b>. 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/gdac_winning.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/gdac_certification.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/gdac_prize.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
-Brief introduction of competition:
-You can find more detatils about the event through this link: 
-https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/
+Purpose of this study:
+
 
 Our goal:
+
 Analyze which brand delivered the most effective Super Bowl advertisement and provide valuable insights into large-scale events like the Super Bowl using Twitter data.
 
 Brief summarization of our strategy:
@@ -35,10 +46,10 @@ Multi-Criteria Decision Making:
 Therefore, we decided to evaluate the effectiveness of the advertisements by considering all the factors comprehensively and chose to use a MCDM model. We used a model that combines AHP and TOPSIS. The weights were determined through the AHP model, while the TOPSIS model was used to evaluate how close the alternatives were to the given criteria in order to identify the most ideal alternative. 
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gdad_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/gdac_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gdac_3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/gdac_3.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -46,6 +57,8 @@ Therefore, we decided to evaluate the effectiveness of the advertisements by con
 </div>
 
 Who is the real winner?
+
+If you would like to learn more about this competition, please refer to this link. https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
