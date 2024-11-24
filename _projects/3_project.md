@@ -3,7 +3,6 @@ layout: page
 title: 2024 Research & Engagement Spring Symposium
 description: Multi label node classification for predicting brands in tweets
 img: assets/img/springsymposium_framework.jpg
-redirect: https://unsplash.com
 importance: 3
 category: Research Project
 ---
