@@ -56,18 +56,3 @@ As shown in the structure of the AHP model at the bottom left, we used the numbe
 This competition was just two months after I arrived in the United States, and I felt a lot of pressure knowing that we had to complete data analysis, create three materials, and present them professionally in English within the given timeframe. However, I am very happy that our team achieved such a great result! 
 
 If you would like to learn more about this competition, please refer to this <a href="https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/" target="_blank">link.</a> 
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
