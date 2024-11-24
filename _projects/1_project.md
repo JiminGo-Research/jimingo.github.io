@@ -4,7 +4,7 @@ title: Develop Simulation-based Integrated Operation Scheduling System
 description: with background image
 img: assets/img/12.jpg
 importance: 1
-category: research
+category: research project
 related_publications: false
 ---
 
