@@ -20,7 +20,7 @@ Brief summarization of our strategy:
 
 To answer the question, "What makes an ad successful?" we analyzed the data from various perspectives, including the number of tweets per brand over time, cost per tweet by brand, and sentiment analysis. 
 
-However, each analysis raised important questions. For example, in the chart below, which analyzes the number of tweets over time, a notable point is the dramatic increase in tweets related to a specific brand immediately following its advertisement. This raises the question: Which is more effective—consistent tweets throughout the entire period, like Marvel, or concentrated bursts of tweets at specific times, like Verizon?
+However, each analysis raised important questions. For example, in the chart below, which analyzes the number of tweets over time, a notable point is the dramatic increase in tweets related to a specific brand immediately following its advertisement. This raises the question: Which is more effective consistent tweets throughout the entire period, like Marvel, or concentrated bursts of tweets at specific times, like Verizon?
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
