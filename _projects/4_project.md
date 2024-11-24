@@ -9,7 +9,7 @@ category: Additional
 
 I participated in the <b>Game Day Analytics Challenge</b> hosted by the David Eccles School of Business at the University of Utah. In this competition, we created an <a href="assets/pdf/GDAC_Infographic.pdf">infographic</a>, <a href="assets/pdf/GDAC_White Paper.pdf">white paper</a> , and <a href="assets/pdf/GDAC_Presentation.pdf">presentation</a>. Our team secured <b>2nd place in the undergraduate division</b>.
 
-Our goal: <b>Which brand delivered the most effective Super Bowl advertisement?</b>
+<b>Our goal</b>: Which brand delivered the most effective Super Bowl advertisement?
 
 <b>Brief summarization of our strategy :</b>
 
@@ -40,7 +40,7 @@ As shown in the structure of the AHP model at the bottom left, we used the numbe
     Structure of AHP and TOPSIS results
 </div>
 
-<b>Who is the real winner?</b> Upon seeing the experimental results, where the NFL ranked first in all categories, we began to wonder if it was simply because the NFL hosted the game, leading to a higher number of mentions. This curiosity led us to <b>social network analysis</b>. We difined nodes as each user and brand, and we determined that an edge exists when a user mentions a brand name in a tweet. We also examined how the network evolved during the initial game time, half game time, and entire game time. What was surprising was that, <b>after the game ended, contrary to the results from the MCDM, Verizon had the largest node size</b>.
+<b>Who is the real winner?</b> Upon seeing the experimental results, where the NFL ranked first in all categories, we began to wonder <b>if it was simply because the NFL hosted the game, leading to a higher number of mentions</b>. This curiosity led us to <b>social network analysis</b>. We difined nodes as each user and brand, and we determined that an edge exists when a user mentions a brand name in a tweet. We also examined how the network evolved during the initial game time, half game time, and entire game time. What was surprising was that, <b>after the game ended, contrary to the results from the MCDM, Verizon had the largest node size</b>.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -53,7 +53,9 @@ As shown in the structure of the AHP model at the bottom left, we used the numbe
 
 <b>Conclusion : </b> Rather than asserting that one method is right over the other, we believe that both MCDM and social network analysis are valuable approaches that companies can consider when evaluating the effectiveness of their advertising.
 
-This competition was just two months after I arrived in the United States, and I felt a lot of pressure knowing that we had to complete data analysis, create three materials, and present them professionally in English within the given timeframe. However, I am very happy that our team achieved such a great result! If you would like to learn more about this competition, please refer to this <a href="https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/" target="_blank">link.</a> 
+This competition was just two months after I arrived in the United States, and I felt a lot of pressure knowing that we had to complete data analysis, create three materials, and present them professionally in English within the given timeframe. However, I am very happy that our team achieved such a great result! 
+
+If you would like to learn more about this competition, please refer to this <a href="https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/" target="_blank">link.</a> 
 
 {% raw %}
 
