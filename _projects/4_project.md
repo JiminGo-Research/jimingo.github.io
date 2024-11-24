@@ -7,18 +7,11 @@ importance: 3
 category: Additional
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+I participated in the Game Day Analytics Challenge hosted by the David Eccles School of Business at the University of Utah. In this competition, our team secured 2nd place in the undergraduate division. You can find more detatils about the event through this link: 
+https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Data description:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
