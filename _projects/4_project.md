@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Information Systems Game Day Analytics Competition
-description: another without an image
+description: The most effecitve brand of Super Bowl LVIII on various perspectives
 img: assets/img/gdac_logo.png
 importance: 3
-category: Research
+category: Additional
 ---
 
 Every project has a beautiful feature showcase page.
