@@ -4,7 +4,7 @@ title: Information Systems Game Day Analytics Competition
 description: another without an image
 img: assets/img/gdac_logo.png
 importance: 3
-category: Research Project
+category: Research
 ---
 
 Every project has a beautiful feature showcase page.
