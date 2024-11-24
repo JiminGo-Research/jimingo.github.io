@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Develop Simulation-based Integrated Operation Scheduling System
+title: project 1
 description: with background image
 img: assets/img/12.jpg
 importance: 1
-category: research project
+category: Research Project
 related_publications: false
 ---
 
