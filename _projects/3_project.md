@@ -2,19 +2,20 @@
 layout: page
 title: 2024 Spring Research & Engagement Symposium
 description: Multi label node classification for predicting brands in tweets
-img: assets/img/springsymposium_framework.jpg
+img: assets/img/springsymposium_framework.png
 importance: 3
 category: Research Project
 ---
 I participated in the 2024 Spring Research & Engagement Symposium hosted by Weber State University. This research is a follow-up study on the limitations experienced during participation in the <a href="https://jimingo-research.github.io/projects/4_project/"> Game Day Analytics Challenge. </a>
 
 <b>Problem description : </b>
+One of our method's limitation of the Game Day Analytics Challenge was that <b>we were unable to use data where the brand's name was not explicitly mentioned in the tweet.</b> For example, if a tweet did not mention the brand's name but referred to a celebrity, song, object, or other elements featured in the advertisement, it should have been considered as related to the brand. Therefore, we aim to develop a <b>model using deep learning techniques and graph-based machine learning to classify posts as related to a brand, even when the brand name is not mentioned.</b>
 
 <b>Proposed method : </b>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/springsymposium_framework.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
