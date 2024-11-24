@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
+title: 2024 Research & Engagement Spring Symposium
+description: Multi label node classification for predicting brands in tweets
+img: assets/img/springsymposium_framework.jpg
 redirect: https://unsplash.com
 importance: 3
-category: work
+category: Research Project
 ---
 
 Every project has a beautiful feature showcase page.
