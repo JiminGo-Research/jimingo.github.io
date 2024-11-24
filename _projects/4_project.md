@@ -48,12 +48,12 @@ As shown in the structure of the AHP model at the bottom left, we used the numbe
     </div>
 </div>
 <div class="caption">
-    Results of tweets per barand over time
+    Visualization of the social network analysis for the entire game time.
 </div>
 
 <b>Conclusion : </b> Rather than asserting that one method is right over the other, we believe that both MCDM and social network analysis are valuable approaches that companies can consider when evaluating the effectiveness of their advertising.
 
-This competition was just two months after I arrived in the United States, and I felt a lot of pressure knowing that we had to complete data analysis, create three materials, and present them professionally in English within the given timeframe. However, I am very happy that our team achieved such a great result! If you would like to learn more about this competition, please refer to this link. https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/
+This competition was just two months after I arrived in the United States, and I felt a lot of pressure knowing that we had to complete data analysis, create three materials, and present them professionally in English within the given timeframe. However, I am very happy that our team achieved such a great result! If you would like to learn more about this competition, please refer to this <a href="https://eccles.utah.edu/programs/undergraduate/game-day-ad-analytics/" target="_blank">link.</a> 
 
 {% raw %}
 
