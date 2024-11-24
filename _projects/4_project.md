@@ -16,22 +16,19 @@ I participated in the <b>Game Day Analytics Challenge</b> hosted by the David Ec
         {% include figure.liquid loading="eager" path="assets/img/gdac_certification.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/gdac_prize.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/gdac_prize.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 Purpose of this study:
 
-
-Our goal:
-
-Analyze which brand delivered the most effective Super Bowl advertisement and provide valuable insights into large-scale events like the Super Bowl using Twitter data.
+Our goal: <b?Which brand delivered the most effective Super Bowl advertisement?</b>
 
 Brief summarization of our strategy:
 
-To answer the question, "What makes an ad successful?" we analyzed the data from various perspectives, including the number of tweets per brand over time, cost per tweet by brand, and sentiment analysis. 
+We first thought about <b?"What makes an ad successful?"</b> and conducted various analyses, including the number of tweets per brand over time, cost per tweet by brand, and sentiment analysis.
 
-However, each analysis raised important questions. For example, in the chart below, which analyzes the number of tweets over time, a notable point is the dramatic increase in tweets related to a specific brand immediately following its advertisement. This raises the question: Which is more effective consistent tweets throughout the entire period, like Marvel, or concentrated bursts of tweets at specific times, like Verizon?
+However, each analysis raised important questions. For example, in the figure below, which analyzes the number of tweets over time, a notable point is the dramatic increase in tweets related to a specific brand immediately following its advertisement. This raises the question: Which is more effective consistent tweets throughout the entire period, like Marvel, or concentrated bursts of tweets at specific times, like Verizon?
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -42,8 +39,12 @@ However, each analysis raised important questions. For example, in the chart bel
     The number of tweets over time for the top 10 brands
 </div>
 
-Multi-Criteria Decision Making:
+<b>Multi-Criteria Decision Making</b>:
+
 Therefore, we decided to evaluate the effectiveness of the advertisements by considering all the factors comprehensively and chose to use a MCDM model. We used a model that combines AHP and TOPSIS. The weights were determined through the AHP model, while the TOPSIS model was used to evaluate how close the alternatives were to the given criteria in order to identify the most ideal alternative. 
+
+As shown in the structure of the AHP model at the bottom left, we used the number of tweets, cost per tweet, positive tweet ratio, and negative tweet ratio as the criteria. The image on the right shows the brand rankings when more weight is given to each criterion. For example, in the case of Universal, when more weight is given to the number of tweets, it ranks 5th, but when more weight is given to the positive tweet ratio, it drops to 63rd. This analysis suggests that Universal did not receive many positive tweets.
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/gdac_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -53,8 +54,10 @@ Therefore, we decided to evaluate the effectiveness of the advertisements by con
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Structure of AHP and TOPSIS results
 </div>
+
+Upon seeing the experimental results, where the NFL ranked first in all categories, we began to wonder if it was simply because the NFL hosted the game, leading to a higher number of mentions.
 
 Who is the real winner?
 
