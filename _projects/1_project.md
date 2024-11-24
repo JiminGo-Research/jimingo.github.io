@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 1
+title: Develop Simulation-based Integrated Operation Scheduling System
 description: with background image
 img: assets/img/12.jpg
 importance: 1
-category: work
-related_publications: true
+category: research
+related_publications: false
 ---
 
 Every project has a beautiful feature showcase page.
