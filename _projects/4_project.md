@@ -22,7 +22,7 @@ I participated in the <b>Game Day Analytics Challenge</b> hosted by the David Ec
 
 Purpose of this study:
 
-Our goal: <b?Which brand delivered the most effective Super Bowl advertisement?</b>
+Our goal: <b>Which brand delivered the most effective Super Bowl advertisement?</b>
 
 Brief summarization of our strategy:
 
