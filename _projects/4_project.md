@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 4
+title: Information Systems Game Day Analytics Competition
 description: another without an image
-img:
+img: assets/img/gdac_logo.png
 importance: 3
 category: fun
 ---
