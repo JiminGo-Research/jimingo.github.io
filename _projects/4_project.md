@@ -30,8 +30,8 @@ However, each analysis raised important questions. For example, in the chart bel
     The number of tweets over time for the top 10 brands
 </div>
 
-Multi-Criteria Decision Making
-Therefore, we decided to evaluate the effectiveness of the advertisements by considering all the factors comprehensively and chose to use a Multi-Criteria Decision-Making (MCDM) model.
+Multi-Criteria Decision Making:
+Therefore, we decided to evaluate the effectiveness of the advertisements by considering all the factors comprehensively and chose to use a MCDM model. We used a model that combines AHP and TOPSIS. The weights were determined through the AHP model, while the TOPSIS model was used to evaluate how close the alternatives were to the given criteria in order to identify the most ideal alternative. The criteria we used were the number of tweets, cost per tweet, positive tweet ratio, and negative tweet ratio, for a total of four criteria.
 
 Who is the real winner?
 
