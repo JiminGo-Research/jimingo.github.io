@@ -25,7 +25,9 @@ This study was initiated to address the challenges faced by a <a href="http://ww
     Left image shows the actual plating line manufactured by the company. Right displays the scheduling result visualization used by the company.
 </div>
 
-<b>Our goal : </b> To address their difficulties, we believed the following three things were necessary:
+<b>Our goal : </b> 
+
+To address their difficulties, we believed the following three things were necessary:
 
 <b>1. A program that automatically designs plating lines</b> Since the company faced an urgent need to reduce the time required for plating line design, it was clear that an automated system was necessary. We viewed this problem as a type of flow shop scheduling and decided to develop a rule-based algorithm to quickly find a solution.
 
@@ -47,7 +49,7 @@ This study was initiated to address the challenges faced by a <a href="http://ww
 Here are some <b>assumptions</b> and <b>constraints</b> necessary to understand the problem:
 
 1. Each workpiece goes through all the stages present in the plating line sequentially, and after a process is completed, it moves to the next tank.
-2. Each tank can process only one workpiece at a time, and if the deeping time is violated, the item is considered defective.
+2. Each tank can process only one workpiece at a time, and if the deeping time falls outside the range betweeen the minimum and maximum deeping time, the item is considered defective.
 3. Each hoist can transport only one workpiece at a time, and it is assumed that there will be no stops during the transport process.
 4. Hoists must be operated with at least one tank gap between tank.
 5. Carriers move at high, medium, or low speed depending on the travel distance, and it takes 10 seconds for ascending and descending
@@ -57,6 +59,10 @@ Here are some <b>assumptions</b> and <b>constraints</b> necessary to understand 
 9. Up to three dummy tanks (empty tanks without chemicals, not used in the actual process but employed to avoid collisions between carriers) can be added.
 
 <b>Our method : </b>
+
+Unlike the company, which only considered the feasibility of a single solution, we aim to present <b>a variety of feasible solutions that could emerge from different combinations of factors</b> such as the number of hoists, number of tanks, number of parallel tanks, number of dummy tanks, cycle time, and the deeping time of each tank. 
+
+We named this method <b>Optimized Operation Planning for Plating (OOPP) Engine.</b> This consist of 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
