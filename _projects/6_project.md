@@ -4,10 +4,18 @@ title: Developing Simulation-based Integrated Operation Scheduling System
 description: a project with no image
 img:
 importance: 4
-category: fun
+category: Research Project
 ---
 
-This project is my first lead project in Industrial Intelligence Laboratory at Incheon National University (My research advisor ). Based on this work, our team published patent and awarded an 19th Industrial Engineering Project Competition hosted by Korean Institute of Industrial Engineers(KIIE).
+This project is my first lead project in Industrial Intelligence Laboratory at Incheon National University. Based on this work, our team published <a hrefpatent and awarded an 19th Industrial Engineering Project Competition hosted by Korean Institute of Industrial Engineers(KIIE).
+
+<b>Purpose of this study : </b>
+
+<b>Problem description : </b>
+
+<b>Our method : </b>
+
+<b>Results : </b>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
