@@ -7,9 +7,29 @@ importance: 4
 category: Research Project
 ---
 
-This project is my first lead project in Industrial Intelligence Laboratory at Incheon National University. Based on this work, our team published <a hrefpatent and awarded an 19th Industrial Engineering Project Competition hosted by Korean Institute of Industrial Engineers(KIIE).
+This project is my first lead project in Industrial Intelligence Laboratory at Incheon National University. Based on this work, our team published <a href="/assets/pdf/patent_certification.pdf">patent</a> and awarded an 19th Industrial Engineering Project CompetitionThi hosted by Korean Institute of Industrial Engineers(KIIE).
 
 <b>Purpose of this study : </b>
+
+This study was initiated to address the challenges faced by a <a href="http://www.ik-tech.co.kr/eng/" target="_blank">company</a> in South Korea that manufactures and sells plating line. When a request is made to create a plating line capable of producing a specific type of plating within given seconds, <b>the company currently tests its feasibility based solely on the expertise and experience of professionals, without any system in place.</b> The company mentioned that manual scheduling takes anywhere from 3 days to over a week, and <b>they were looking for ways to reduce this time</b>. Additionally, due to the manual nature of the scheduling process, <b>mistakes have occured, such as failing to identify opportunites to reduce the number of hoists.</b> 
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/electroplating_1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/electroplating_2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    You can also have artistically styled 2/3 + 1/3 images, like these.
+</div>
+
+<b>Our goal : </b>
+To address their difficulties, we believed the following things were necessary.
+1. Automation 
+2. A program for ananlyzing scheduling results
+3. Graphic User Interface (GUI)
 
 <b>Problem description : </b>
 
