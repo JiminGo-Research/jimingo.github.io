@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Developing Simulation-based Integrated Operation Scheduling System
-description: a project with no image
-img:
+description:
+img: "assets/img/electroplating_3.png"
 importance: 4
 category: Research Project
 ---
@@ -22,16 +22,27 @@ This study was initiated to address the challenges faced by a <a href="http://ww
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left image shows the actual plating line manufactured by the company. Right displays the scheduling result visualization used by the company.
 </div>
 
 <b>Our goal : </b>
-To address their difficulties, we believed the following things were necessary.
-1. Automation 
-2. A program for ananlyzing scheduling results
-3. Graphic User Interface (GUI)
+To address their difficulties, we believed the following three things were necessary:
+<b>1. A program that automatically designs plating lines</b> Since the company faced an urgent need to reduce the time required for plating line design, it was clear that an automated system was necessary. We viewed this problem as a type of flow shop scheduling and decided to develop a rule-based algorithm to quickly find a solution.
+
+<b>2. A program for ananlyzing scheduling results</b> Due to reliance on experts, it was difficult to explain to clients why certain designs were necessary to meet given requirement. As shown in the figure above, the scheduling result chart used by the company was not easy to understand at a glance. Therefore, we decided to develop a bottleneck analysis tool and a more user-friendly Gantt chart.
+
+<b>3. Graphic User Interface (GUI)</b> To help the worker understand how the scheduling results actually functioned and enable manufacturing on the factory, we also decided to develop a GUI.
 
 <b>Problem description : </b>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/electroplating_3.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Example of electroplating line considered by this research
+</div>
 
 <b>Our method : </b>
 
