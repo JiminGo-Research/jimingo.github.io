@@ -62,7 +62,12 @@ Here are some <b>assumptions</b> and <b>constraints</b> necessary to understand 
 
 Unlike the company, which only considered the feasibility of a single solution, we aim to present <b>a variety of feasible solutions that could emerge from different combinations of factors</b> such as the number of hoists, number of tanks, number of parallel tanks, number of dummy tanks, cycle time, and the deeping time of each tank. 
 
-We named this method <b>Optimized Operation Planning for Plating (OOPP) Engine.</b> This consist of 
+We named this method <b>Optimized Operation Planning for Plating (OOPP) Engine.</b> This consist of 4 steps: Understanding the situation -> Diagnotic analysis -> Operational strategy improvement -> Deriving optimal operational strategy. By continuously repeating this process until no further improvements can be made, we search for all possible feasible solutions.
+
+<b>Step 1: Understanding the situation</b> This step 
+<b>Step 2: </b>
+<b>Step 3: </b>
+<b>Step 4: </b>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -74,6 +79,8 @@ We named this method <b>Optimized Operation Planning for Plating (OOPP) Engine.<
 </div>
 
 <b>Results : </b>
+
+<b>Conclusion : </b>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
