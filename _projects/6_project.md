@@ -7,7 +7,7 @@ importance: 4
 category: Research Project
 ---
 
-This project is my first lead project in Industrial Intelligence Laboratory at Incheon National University. Based on this work, our team published <a href="/assets/pdf/patent_certification.pdf">patent</a> and awarded an 19th Industrial Engineering Project CompetitionThi hosted by Korean Institute of Industrial Engineers(KIIE).
+This project is my first lead project in Industrial Intelligence Laboratory at Incheon National University. Based on this work, our team published <a href="/assets/pdf/patent_certification.pdf">patent</a> and awarded an 19th Industrial Engineering Project Competition hosted by Korean Institute of Industrial Engineers(KIIE).
 
 <b>Purpose of this study : </b>
 
@@ -25,15 +25,15 @@ This study was initiated to address the challenges faced by a <a href="http://ww
     Left image shows the actual plating line manufactured by the company. Right displays the scheduling result visualization used by the company.
 </div>
 
-<b>Our goal : </b>
-To address their difficulties, we believed the following three things were necessary:
+<b>Our goal : </b> To address their difficulties, we believed the following three things were necessary:
+
 <b>1. A program that automatically designs plating lines</b> Since the company faced an urgent need to reduce the time required for plating line design, it was clear that an automated system was necessary. We viewed this problem as a type of flow shop scheduling and decided to develop a rule-based algorithm to quickly find a solution.
 
 <b>2. A program for ananlyzing scheduling results</b> Due to reliance on experts, it was difficult to explain to clients why certain designs were necessary to meet given requirement. As shown in the figure above, the scheduling result chart used by the company was not easy to understand at a glance. Therefore, we decided to develop a bottleneck analysis tool and a more user-friendly Gantt chart.
 
 <b>3. Graphic User Interface (GUI)</b> To help the worker understand how the scheduling results actually functioned and enable manufacturing on the factory, we also decided to develop a GUI.
 
-<b>Problem description : </b>
+<b>Problem definition : </b>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -44,7 +44,28 @@ To address their difficulties, we believed the following three things were neces
     Example of electroplating line considered by this research
 </div>
 
+Here are some <b>assumptions</b> and <b>constraints</b> necessary to understand the problem:
+
+1. Each workpiece goes through all the stages present in the plating line sequentially, and after a process is completed, it moves to the next tank.
+2. Each tank can process only one workpiece at a time, and if the deeping time is violated, the item is considered defective.
+3. Each hoist can transport only one workpiece at a time, and it is assumed that there will be no stops during the transport process.
+4. Hoists must be operated with at least one tank gap between tank.
+5. Carriers move at high, medium, or low speed depending on the travel distance, and it takes 10 seconds for ascending and descending
+6. If a stage has a significantly longer immersion time compared to others, parallel tanks may be used.
+7. Hoist overlapping is allowed when the turnover point is determined in parallel tanks.
+8. If the immersion time in a tank is less than 5 seconds, it cannot be a turnover point.
+9. Up to three dummy tanks (empty tanks without chemicals, not used in the actual process but employed to avoid collisions between carriers) can be added.
+
 <b>Our method : </b>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/electroplating_4.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Example of electroplating line considered by this research
+</div>
 
 <b>Results : </b>
 
