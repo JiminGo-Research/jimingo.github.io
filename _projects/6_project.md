@@ -52,11 +52,11 @@ Here are some <b>assumptions</b> and <b>constraints</b> necessary to understand 
 2. Each tank can process only one workpiece at a time, and if the deeping time falls outside the range betweeen the minimum and maximum deeping time, the item is considered defective.
 3. Each hoist can transport only one workpiece at a time, and it is assumed that there will be no stops during the transport process.
 4. Hoists must be operated with at least one tank gap between tank.
-5. Carriers move at high, medium, or low speed depending on the travel distance, and it takes 10 seconds for ascending and descending
+5. hoists move at high, medium, or low speed depending on the travel distance, and it takes 10 seconds for ascending and descending
 6. If a stage has a significantly longer immersion time compared to others, parallel tanks may be used.
 7. Hoist overlapping is allowed when the turnover point is determined in parallel tanks.
 8. If the immersion time in a tank is less than 5 seconds, it cannot be a turnover point.
-9. Up to three dummy tanks (empty tanks without chemicals, not used in the actual process but employed to avoid collisions between carriers) can be added.
+9. Up to three dummy tanks (empty tanks without chemicals, not used in the actual process but employed to avoid collisions between hoists) can be added.
 
 <b>Our method : </b>
 
@@ -94,9 +94,9 @@ We named this method <b>Optimized Operation Planning for Plating (OOPP) Engine.<
     The results show when one tank was added to the processes identified as bottlenecks in Step 2, revealing that the bottleneck shifted to a different process.
 </div>
 
-<b>Step 4: Deriving optimal strategy.</b>This step is the core stage of the OOPP Engine, where the <b>turnover points and hoist paths are determined</b> to complete the scheduling. It is further divided into four sub-stages: Determining the optimal turn over point -> Deciding the hoist path -> Adding dummy tanks -> Find feasible solution
+<b>Step 4: Deriving optimal strategy.</b>This step is the core stage of the OOPP Engine, where the <b>turnover points and hoist paths are determined</b> to complete the scheduling. We named this process Concurrent Task Search (CTS), and it is divided into four sub-stages: Determining the optimal turn over point -> Deciding the hoist path -> Adding dummy tanks -> Find feasible solution
 
-<b>1) Determining the optimal turn over point.</b> Determining the turnover point has a significant impact on the complexity of the carrier path decision and the feasibility of the final solution. Through case studies, we found that <b>when the turnover point is determined at parallel tanks, issues arise</b> where the gap between two carriers becomes too narrow, or the carriers cross each other, leading to collisions. Additionally, we discovered that <b>problems can occur even when there is no limit on the number of tanks a single carrier can handle</b>, and we have enabled users to input this into the simulator.
+<b>1) Determining the optimal turn over point.</b> Determining the turnover point has a significant impact on the complexity of the hoist path decision and the feasibility of the final solution. Through case studies, we found that <b>when the turnover point is determined at parallel tanks, issues arise</b> where the gap between two hoists becomes too narrow, or the hoists cross each other, leading to collisions. Additionally, we discovered that <b>problems can occur even when there is no limit on the number of tanks a single hoist can handle</b>, and we have enabled users to input this into the simulator.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -104,83 +104,58 @@ We named this method <b>Optimized Operation Planning for Plating (OOPP) Engine.<
     </div>
 </div>
 <div class="caption">
-    The left image is a Gantt chart illustrating a situation where a single carrier is responsible for too many tanks, causing it to miss the given cycle time. The red line appears when the carrier moves from tank 9 to tank 2, indicating a time shortage. To make this feasible, the right image shows the necessary adjustments.
+    The left image is a Gantt chart illustrating a situation where a single hoist is responsible for too many tanks, causing it to miss the given cycle time. The red line appears when the hoist moves from tank 9 to tank 2, indicating a time shortage. To make this feasible, the right image shows the necessary adjustments.
 </div>
 
-<b>2) Determining the optimal turn over point.</b>
+<b>2) Deciding the hoist path & Adding dummy tanks.</b> This part is the most challenging aspect of our algorithm. Once the turnover point is determined, the hoist paths are decided by considering the movements of neighboring hoists within the defined turnover point. The most difficult part of determining the hoist paths was ensuring that there is a gap of at least one tank between the hoists.
+
+We categorized potential collision scenarios into <b>upper collision, lower collision, and upper & lower collision.</b>
+
+(1) Upper collision: This occurs when a collision happens with the hoist above. To avoid the collision, the hoist needs to move down.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/electroplating_9.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+(2) Lower collision: This occurs when a collision happens with the hoist below. In this case, the hoist must move upwards.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/electroplating_10.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+(3) Upper & lower collision: This occurs when collisions happen with both the hoists above and below. In this case, the collisions must be compared, and the hoist should move up or down appropriately to avoid the collisions.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/electroplating_11.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+If avoiding collisions is not possible without adding dummy tanks, we add the dummy tanks and then re-run the collision avoidance logic.
+
+<b>3) Find feasible solution.</b> This process is repeated until all collisions are resolved, leading to the final solution.
 
 <b>Results : </b>
 
+The image below shows the result of the CTS logic we developed. The turnover points are distinguished by green lines, and the movements of the hoists over time are represented by dashed and solid lines. The dashed lines indicate the movement of the hoists while carrying workpieces, while the solid lines represent the movement without workpieces. Each workpiece is represented by a bar of the same color. In cases where a dummy tank is added, the label "Dummy" is written on the y-axis. Additionally, the entire process from warm-up to cool-down is shown, allowing workers to effectively understand the overall process.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/electroplating_12.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Additionally, the <b>simulator</b> includes features such as <b>process operation visualization</b>, which shows how the various solutions discovered by the OOPP Engine are implemented, as well as <b>what-if-based cost-profit analysis.</b> By inputting estimated costs for designing the plating line, including hoists, tanks, chemicals, and production profits, users can analyze break-even points between solutions and make more informed decisions.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/electroplating_13.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/electroplating_14.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 <b>Conclusion : </b>
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
