@@ -159,3 +159,11 @@ Additionally, the <b>simulator</b> includes features such as <b>process operatio
 
 <b>Conclusion : </b>
 
+Our developed simulator and algorithms are now actively used within the company for designing plating lines. This has eliminated the need to consult external vendors when assessing design suitability, resulting in significant time savings. After nearly a year of hard work, the project has been successfully completed, and it is truly rewarding to see the tangible benefits it brings to the company.
+
+<b>Reflection : </b>
+This project holds a special place for me personally because it marked several firsts. It was my first collaboration with a company, my first leading project in the lab, and it provided opportunities to present our research at conferences, file patents, and even win awards. There were countless development iterations before we finalized the OOPP Engine and CTS algorithm.
+
+Previous research had mostly focused on reducing cycle time, so there were limited references, and developing an algorithm that could account for all real-world constraints was no easy task. Reflecting on the journey, I realize how deeply immersed I was in the research—consulting with other labs, seeking advice on the challenges I encountered, and dedicating hours to the mathematical formulations. Despite many setbacks and failures, the time I spent relentlessly asking, "How can we improve?" led to immense personal and professional growth.
+
+I am currently designing experiments to tackle this project using reinforcement learning. If you are interested in the research we have conducted or the research I am planning to pursue, feel free to reach out with any questions.
