@@ -64,19 +64,50 @@ Unlike the company, which only considered the feasibility of a single solution, 
 
 We named this method <b>Optimized Operation Planning for Plating (OOPP) Engine.</b> This consist of 4 steps: Understanding the situation -> Diagnotic analysis -> Operational strategy improvement -> Deriving optimal operational strategy. By continuously repeating this process until no further improvements can be made, we search for all possible feasible solutions.
 
-<b>Step 1: Understanding the situation</b> This step 
-<b>Step 2: </b>
-<b>Step 3: </b>
-<b>Step 4: </b>
+<b>Step 1: Understanding the situation.</b> This step involves <b>inputting the basic information for scheduling into the simulator.</b> It includes details, including the process the electroplated items must undergo, minimum and maximum deeping time for each process, hoist's low, medium, and high speed times, and much more. 
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/electroplating_4.png" title="example image" class="img-fluid rounded z-depth-1" %}
+<b>Step 2: Diagnotic analysis.</b> In this step, the <b>minimum cycle time is calculated</b> based on the provided process information, and <b>bottleneck processes are analyzed.</b> Cycle time refers to the time it takes for a workpiece to be processed from input to completion. The bottleneck analysis includes assessing how much work is present in each tank during the process and calculating the efficiency of each tank when the plating line is operated at the minimum cycle time.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/electroplating_4.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/electroplating_5.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Example of electroplating line considered by this research
+    Example of our bottleneck analysis: In the bar graph on the left, the process with the red-bordered frame indicates the bottleneck.
 </div>
+
+<b>Step 3: Operational strategy improvement.</b> <b>Parallel tanks are added to the bottleneck process</b> from Step 2, and their impact is assessed using the same performance metrics.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/electroplating_6.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/electroplating_7.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The results show when one tank was added to the processes identified as bottlenecks in Step 2, revealing that the bottleneck shifted to a different process.
+</div>
+
+<b>Step 4: Deriving optimal strategy.</b>This step is the core stage of the OOPP Engine, where the <b>turnover points and hoist paths are determined</b> to complete the scheduling. It is further divided into four sub-stages: Determining the optimal turn over point -> Deciding the hoist path -> Adding dummy tanks -> Find feasible solution
+
+<b>1) Determining the optimal turn over point.</b> Determining the turnover point has a significant impact on the complexity of the carrier path decision and the feasibility of the final solution. Through case studies, we found that <b>when the turnover point is determined at parallel tanks, issues arise</b> where the gap between two carriers becomes too narrow, or the carriers cross each other, leading to collisions. Additionally, we discovered that <b>problems can occur even when there is no limit on the number of tanks a single carrier can handle</b>, and we have enabled users to input this into the simulator.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/electroplating_8.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The left image is a Gantt chart illustrating a situation where a single carrier is responsible for too many tanks, causing it to miss the given cycle time. The red line appears when the carrier moves from tank 9 to tank 2, indicating a time shortage. To make this feasible, the right image shows the necessary adjustments.
+</div>
+
+<b>2) Determining the optimal turn over point.</b>
 
 <b>Results : </b>
 
