@@ -6,7 +6,17 @@ img: assets/img/1.jpg
 importance: 3
 category: Additional
 ---
-In the spring of 2023, I 
+<b> Purpose of this study & Goal : </b>
+
+In 2023, there was significant interest in South Korea in finding lower prices through <b>international direct purchases</b> (buying goods directly from overseas retailers) and <b?reverse direct purchases</b> (buying Korean goods to overseas retailers). I noticed that many people were <b>struggling to determine which overseas websites offered the best deals on specific products.</b> To address this, I decided to develop a service that could provide a solution. Together with two other students, I <b>created a website that compares prices of identical products across various platforms</b>, helping users identify the most cost-effective options. 
+
+<b> Method : </b>
+
+<b> Results : </b>
+
+<b> Conclusion : </b>
+
+<b> Reflection : </b>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
