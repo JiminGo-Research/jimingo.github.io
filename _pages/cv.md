@@ -1,5 +1,4 @@
 ---
-layout: cv
 permalink: /assets/pdf/cv.pdf
 title: cv
 nav: true
